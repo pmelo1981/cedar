@@ -1,4 +1,4 @@
-ssh ubuntu@171.54.37.206 <<EOF 
+ssh ubuntu@172.31.41.140 <<EOF 
   cd /home/ubuntu
   cd cedar
   git pull https://github.com/ohiodn8/cedar.git
