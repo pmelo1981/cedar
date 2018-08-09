@@ -2,5 +2,5 @@ ssh ubuntu@172.31.41.140 <<EOF
   cd /home/ubuntu
   cd cedar
   git pull https://github.com/ohiodn8/cedar.git
-  bundle install && rails db:migrate && rspec spec
+  bundle install && rails db:migrate && rspec spec --order random --fail-fast
 EOF
