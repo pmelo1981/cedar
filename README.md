@@ -1,5 +1,3 @@
-# INVOKE README
+# CI/CD with Jenkins and Ruby on Rails Tutorial Project
 
-## Test app for #Jenkins #Rails Setup on #AWS EC2 handling CI/CD using #Multiple Branches
-
-## Rails chat room with action cable deployed to AWS (CI/CD) with jenkins
+## Tutorial => http://www.dsolc.com/blogs/13-continuous-integration-and-deployment-with-jenkins-and-ruby-on-rails
