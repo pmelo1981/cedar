@@ -24,6 +24,7 @@
 /yarn-error.log
 
 /public/assets
+/public/rspec_test.html
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
