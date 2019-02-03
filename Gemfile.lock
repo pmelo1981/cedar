@@ -57,6 +57,7 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    brakeman (4.4.0)
     builder (3.2.3)
     byebug (10.0.2)
     capybara (3.2.1)
@@ -71,6 +72,11 @@ GEM
     chromedriver-helper (1.2.0)
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
+    ci_reporter (2.0.0)
+      builder (>= 2.1.2)
+    ci_reporter_rspec (1.0.0)
+      ci_reporter (~> 2.0)
+      rspec (>= 2.14, < 4)
     clearance (1.16.1)
       bcrypt
       email_validator (~> 1.4)
@@ -266,9 +272,12 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.7)
+  brakeman
   byebug
   capybara (>= 2.15, < 4.0)
   chromedriver-helper
+  ci_reporter
+  ci_reporter_rspec
   clearance
   coffee-rails (~> 4.2)
   guard-rspec
