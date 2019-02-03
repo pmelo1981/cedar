@@ -1,4 +1,13 @@
-  cd /home/kubuntu
-  cd cedar
-  git pull http://192.168.56.103:5500/root/cedar.git
-  bundle install && rails db:migrate && rspec spec
+.tests:
+  script: rake test
+  stage: test
+  only:
+    refs:
+      - branches
+
+rspec:
+  extends: .tests
+  script: rake rspec
+  only:
+    variables:
+      - $RSPEC
