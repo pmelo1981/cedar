@@ -8,4 +8,4 @@
 <pre><code>rspec spec --format html --out public/rspec_test.html</code></pre>
 </p>
   
-<p>Gitlab Local3</p>
+<p>Gitlab Local::Test Jenkins Integration</p>
