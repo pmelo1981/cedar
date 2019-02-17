@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Install Gems') {
             steps {
-			    rvm 'bundle install'
+			    sh 'bundle install'
 			    rvm 'bundle exec rake'
             }
         }		
