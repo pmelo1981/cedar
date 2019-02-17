@@ -7,6 +7,12 @@ pipeline {
                 echo 'Building..'
             }
         }
+        stage('Install Gems') {
+            steps {
+			    rvm 'bundle install'
+			    rvm 'bundle exec rake'
+            }
+        }		
         stage('Test') {
             steps {
                 echo 'Testing..'
