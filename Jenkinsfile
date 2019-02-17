@@ -9,9 +9,7 @@ pipeline {
         }
         stage('Install Gems') {
 			steps {
-				 bash '''#!/bin/bash
-						 sh "bundle install" 
-				 '''
+				 sh "#!/bin/bash \n" + "bundle install"
 			}
         }		
         stage('Test') {
