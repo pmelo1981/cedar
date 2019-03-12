@@ -1,6 +1,6 @@
-ssh kubuntu@192.168.56.103 <<EOF 
-  cd /home/kubuntu
+ssh ubuntu@172.31.41.186 <<EOF 
+  cd /home/ubuntu
   cd cedar
-  git pull http://192.168.56.103:5500/root/cedar.git
+  git pull https://github.com/ohiodn8/cedar.git
   bundle install && rails db:migrate && rspec spec && rspec spec --format html --out public/rspec_test.html
 EOF
