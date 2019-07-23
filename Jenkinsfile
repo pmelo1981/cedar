@@ -12,14 +12,14 @@ pipeline {
 				 sh "./deploy"
 			}
         }		
-        stage('Test') {
+        stage('Bundle Install') {
             steps {
                 sh 'bundle install'
             }
         }
-        stage('Deploy') {
+        stage('RSPEC TESTING') {
             steps {
-                rspec
+                sh 'rspec spec'
             }
         }
     }
