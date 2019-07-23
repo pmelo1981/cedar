@@ -14,12 +14,12 @@ pipeline {
         }		
         stage('Test') {
             steps {
-                sh 'Testing...'
+                sh 'bundle install'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                rspec spec
             }
         }
     }
