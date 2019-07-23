@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                rspec spec
+                rspec
             }
         }
     }
