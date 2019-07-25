@@ -2,7 +2,7 @@
 <h1>5Messages1</h1>
 
 <p><b><%= Docker.url %></b></p>
-<p><b><%= Docker.info %></b></p>
+<p><b>Docker Info:</b> <%= Docker.info.gsub(/\n/, '<br>').html_safe %></p>
 
   <div class="well">    
     <% @messages.each do |message| %>
