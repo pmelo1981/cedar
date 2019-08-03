@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount Uzebba::Engine => "/uzebba"
+  mount FileExplorer::Engine => "/file_explorer"
   resources :messages
     
   root "messages#index"   

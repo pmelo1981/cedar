@@ -1,3 +1,15 @@
+PATH
+  remote: gems/uzebba-latest
+  specs:
+    uzebba (0.1.5)
+      browser
+      chartkick
+      crono (~> 1.1, >= 1.1.2)
+      daemons
+      groupdate
+      jquery-rails
+      os
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -57,6 +69,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
     brakeman (4.5.1)
+    browser (2.6.1)
     builder (3.2.3)
     byebug (11.0.1)
     capybara (3.26.0)
@@ -67,6 +80,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    chartkick (3.2.1)
     childprocess (1.0.1)
       rake (< 13.0)
     chromedriver-helper (2.1.1)
@@ -94,15 +108,26 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    crono (1.1.2)
+      activerecord (>= 4.0)
+      activesupport (>= 4.0)
+    daemons (1.3.1)
     diff-lcs (1.3)
+    docker-api (1.34.2)
+      excon (>= 0.47.0)
+      multi_json
     email_validator (1.6.0)
       activemodel
     erubi (1.8.0)
+    excon (0.65.0)
     execjs (2.7.0)
     ffi (1.11.1)
+    file_explorer (0.1.1)
     formatador (0.2.5)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    groupdate (4.1.2)
+      activesupport (>= 4.2)
     guard (2.15.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -144,6 +169,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     msgpack (1.3.0)
+    multi_json (1.13.1)
     nenv (0.3.0)
     nio4r (2.4.0)
     nokogiri (1.10.3)
@@ -151,6 +177,7 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    os (1.0.1)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -276,6 +303,8 @@ DEPENDENCIES
   ci_reporter_rspec
   clearance
   coffee-rails (~> 4.2)
+  docker-api
+  file_explorer
   guard-rspec
   jbuilder (~> 2.5)
   jquery-rails
@@ -291,6 +320,7 @@ DEPENDENCIES
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)
+  uzebba!
   web-console (>= 3.3.0)
 
 BUNDLED WITH
