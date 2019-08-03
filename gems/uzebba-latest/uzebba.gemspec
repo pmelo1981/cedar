@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   # s.add_dependency "rails", "~> 5.2.1" 
   s.add_dependency "jquery-rails"    
   s.add_dependency "os"
-  s.add_dependency "chartkick", "~> 3.2.1"   
+  s.add_dependency "chartkick" 
   s.add_dependency "groupdate"
   s.add_dependency "daemons" 
   s.add_dependency "browser"
