@@ -1,5 +1,5 @@
 ssh ubuntu@54.212.98.190 <<EOF 
-  cd /home/ohiodn8
+  cd /home/ubuntu
   cd cedar
   git pull https://github.com/ohiodn8/cedar.git
   bundle install && rails db:migrate && rspec spec && rspec spec --format html --out public/rspec_test.html
