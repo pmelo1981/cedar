@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="12" skipped="0" failures="0" errors="0" time="0.045344" timestamp="2020-02-07T07:05:12-05:00" hostname="kubuntu-VirtualBox">
+<testsuite name="rspec" tests="12" skipped="0" failures="0" errors="0" time="0.041821" timestamp="2020-02-07T16:44:32-05:00" hostname="kubuntu-VirtualBox">
 <properties>
-<property name="seed" value="23360"/>
+<property name="seed" value="804"/>
 </properties>
-<testcase classname="spec.models.message_spec" name="Message Association tests should belong to user" file="./spec/models/message_spec.rb" time="0.001167"></testcase>
-<testcase classname="spec.models.message_spec" name="Message validation tests ensures Content presence" file="./spec/models/message_spec.rb" time="0.012190"></testcase>
-<testcase classname="spec.models.user_spec" name="User should have many messages" file="./spec/models/user_spec.rb" time="0.000695"></testcase>
-<testcase classname="spec.models.user_spec" name="User should create user successfully" file="./spec/models/user_spec.rb" time="0.013632"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #index" file="./spec/routing/messages_routing_spec.rb" time="0.004208"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #new" file="./spec/routing/messages_routing_spec.rb" time="0.000959"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #show" file="./spec/routing/messages_routing_spec.rb" time="0.001634"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #edit" file="./spec/routing/messages_routing_spec.rb" time="0.001327"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #create" file="./spec/routing/messages_routing_spec.rb" time="0.001737"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #update via PUT" file="./spec/routing/messages_routing_spec.rb" time="0.001167"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #update via PATCH" file="./spec/routing/messages_routing_spec.rb" time="0.001595"></testcase>
-<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #destroy" file="./spec/routing/messages_routing_spec.rb" time="0.001851"></testcase>
+<testcase classname="spec.models.message_spec" name="Message Association tests should belong to user" file="./spec/models/message_spec.rb" time="0.001496"></testcase>
+<testcase classname="spec.models.message_spec" name="Message validation tests ensures Content presence" file="./spec/models/message_spec.rb" time="0.012250"></testcase>
+<testcase classname="spec.models.user_spec" name="User should have many messages" file="./spec/models/user_spec.rb" time="0.000607"></testcase>
+<testcase classname="spec.models.user_spec" name="User should create user successfully" file="./spec/models/user_spec.rb" time="0.013543"></testcase>
+<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #index" file="./spec/routing/messages_routing_spec.rb" time="0.004493"></testcase>
+<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #new" file="./spec/routing/messages_routing_spec.rb" time="0.000909"></testcase>
+<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #show" file="./spec/routing/messages_routing_spec.rb" time="0.000936"></testcase>
+<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #edit" file="./spec/routing/messages_routing_spec.rb" time="0.000855"></testcase>
+<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #create" file="./spec/routing/messages_routing_spec.rb" time="0.000770"></testcase>
+<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #update via PATCH" file="./spec/routing/messages_routing_spec.rb" time="0.000858"></testcase>
+<testcase classname="spec.routing.messages_routing_spec" name="MessagesController routing routes to #destroy" file="./spec/routing/messages_routing_spec.rb" time="0.000946"></testcase>
 </testsuite>
