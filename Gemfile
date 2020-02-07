@@ -48,6 +48,8 @@ end
 
 group :test do
   # RSpec, etc
+  gem 'rspec', :require => false
+  gem 'rspec_junit_formatter', :require => false
   gem 'ci_reporter'
   gem 'ci_reporter_rspec'
   gem "brakeman", :require => false
