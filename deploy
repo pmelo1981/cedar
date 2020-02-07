@@ -1,6 +1,10 @@
-ssh ubuntu@34.222.127.154 <<EOF 
-  cd /home/ubuntu
+ssh ssh ohiodn8@34.68.163.29 <<EOF 
+  cd /home/ohiodn8
   cd cedar
   git pull https://github.com/ohiodn8/cedar.git
   bundle install && rails db:migrate && rspec spec && rspec spec --format html --out public/rspec_test.html
+  RAILS_ENV=test bundle exec rake db:migrate
+  RAILS_ENV=test bundle exec rspec --format RspecJunitFormatter --out results.xml
+  rspec spec --format html --out public/rspec_test.html
+  brakeman -d -o brakeman-output.json
 EOF
